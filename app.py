@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("Welcome to *Streamlit* with *Docker*!")
+st.title("Welcome to *Streamlit* with *Docker*!" )
 st.write("This is a simple web application built using Streamlit and Docker.")
 
 st.header("🚀 Introducing Streamlit with Docker")
@@ -74,6 +74,17 @@ st.write("7. **To access the app from another machine, use:**")
 st.code("""
 docker run -p 8501:8501 --network=host streamlit-app
 """, language='bash')
+
+st.header("☁️ Deploying a Streamlit App")
+st.write("Once your app is running locally, you can deploy it using various cloud services. Here is one popular option:")
+
+st.subheader("1️⃣ Deploying with Streamlit Cloud")
+st.write("Streamlit offers an easy-to-use cloud platform for hosting apps:")
+st.write("1. Push your Streamlit app to a GitHub repository.")
+st.write("2. Go to [Streamlit Cloud](https://share.streamlit.io/) and sign in with GitHub.")
+st.write("3. Click 'New app' and connect your repository.")
+st.write("4. Select the branch and filename (`app.py`).")
+st.write("5. Click 'Deploy' to launch your app online.")
 
 st.header("🎉 Enjoy Exploring Streamlit with Docker!")
 st.write("Feel free to modify the code, add new features, and experiment with Streamlit components!")
